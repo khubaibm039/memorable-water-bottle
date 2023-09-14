@@ -1,3 +1,4 @@
+import PropTypes from './props-types';
 import "./bottle.css"
 
 const Bottle = ({ bottle, handleAddToCard }) => {
@@ -11,5 +12,11 @@ const Bottle = ({ bottle, handleAddToCard }) => {
         </div>
     );
 };
+
+Bottle.propTypes = {
+    bottle: PropTypes.array.isRequired,
+    handleAddToCard: PropTypes.func.isRequired
+}
+
 
 export default Bottle;
